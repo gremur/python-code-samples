@@ -1,3 +1,3 @@
 # python-code-samples
 
-Frequently used code snippets for regular use in work.
+A collection of frequently used code snippets for regular usage.
