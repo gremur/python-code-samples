@@ -125,8 +125,8 @@ def is_digit(token: any) -> bool:
     Args:
         token: any kind of token
     Returns:
-        'True' if token if int or float type
-        'False' if token is not int or float type
+        'True' if token is int or float type
+        'False' if token is not int or not float type
     """
     if token.isdigit():
         return True
@@ -140,7 +140,7 @@ def is_digit(token: any) -> bool:
 
 def convert_to_unicode(txt: str) -> str:
     """
-    Convert non latin chars including numbers and special chars to unicode codes, like "&" -> "\u0026"
+    Convert non latin chars including numbers and special chars to unicode codes, like "&" to "\u0026"
     Args:
         txt: text string
     Returns:
