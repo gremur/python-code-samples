@@ -24,3 +24,6 @@ df = df[df['column_name'].isin(keep_items)]
 
 # filter dataframe numerical column by value
 df = df[df['column_name'] > 3]
+
+# filter dataframe column by values starts with 'G'
+df = df[df['column_name'].str.startswith('G')]
