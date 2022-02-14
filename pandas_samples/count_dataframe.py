@@ -14,5 +14,8 @@ df['new_column_name'].nunique()
 # count null value items in column
 df['new_column_name'].isnull().sum()
 
-# count frequencies of values in 'new_column_name' column
-df['new_column_name'].value_counts()
+# count frequencies of values in 'new_column_name' column and sort results in descending order
+df['new_column_name'].value_counts(sort=True)
+
+# show percentages instead of counts
+df['new_column_name'].value_counts(sort=False, normalize=True)
