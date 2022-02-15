@@ -28,5 +28,5 @@ df = df[df['column_name'] > 3]
 # filter dataframe column by values starts with 'G'
 df = df[df['column_name'].str.startswith('G')]
 
-# filter dataframe rows by two columns values
+# filter dataframe rows by two columns values, | means OR
 df = df[(df["column_name_1"] > 500) | (df["column_name_2"] < 50)]
