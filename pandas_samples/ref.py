@@ -1,0 +1,25 @@
+import numpy as np
+
+NULL_VALUES = {
+    np.nan,
+    float("NaN"),
+    "#N/A",
+    "#N/A N/A",
+    "#NA",
+    "-1.#IND",
+    "-1.#QNAN",
+    "-NaN",
+    "-nan",
+    "1.#IND",
+    "1.#QNAN",
+    "<NA>",
+    "N/A",
+    "NA",
+    "NULL",
+    "NaN",
+    "n/a",
+    "nan",
+    "null",
+    "",
+    None,
+}
