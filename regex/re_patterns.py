@@ -95,3 +95,6 @@ RE_CURRENCY_SYMBOL: Pattern = re.compile(r"[₽€$¢£¤¥ƒ֏؋৲৳૱௹฿
 RE_MENTION: Pattern = re.compile(r"(?:^|(?<![\w@.]))@\w+", re.I)
 
 RE_HASHTAG: Pattern = re.compile(r"(?:^|(?<![\w#＃.]))[#＃](?!\d)\w+", re.I)
+
+# check if all types of chars exist in string and overall string length is 6 chars or longer
+RE_ALL_EXIST: Pattern = re.compile(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$")
