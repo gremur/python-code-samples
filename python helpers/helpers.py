@@ -46,15 +46,15 @@ def to_hash(txt: str) -> Union[str, None]:
         return None
 
 
-def flatten_list(lst: list) -> list:
+def flatten_list(lst: Union[list, tuple]) -> list:
     """
-    Convert list of lists to one level list
+    Convert list of lists or tuples to one level list
     Args:
         lst: List of lists
     Returns:
         single level list
     """
-    return [item for sublist in lst for item in sublist]
+    return [item for subitem in lst for item in subitem]
 
 
 def deduplicate_list(lst: list) -> list:
