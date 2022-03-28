@@ -12,3 +12,8 @@ result2 = [lst[i:i + n] for i in range(0, len(lst), n)]
 # print(result2) returns [[1, 2], [2, 4], [5, 6]]
 
 
+# sort dict by value
+x = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+result3 = {k: v for k, v in sorted(x.items(), key=lambda item: item[1])}
+# or
+result4 = dict(sorted(x.items(), key=lambda item: item[1]))
