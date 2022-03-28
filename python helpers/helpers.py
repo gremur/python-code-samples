@@ -147,3 +147,17 @@ def convert_to_unicode(txt: str) -> str:
         text string with unicode codes
     """
     return str(txt.encode("unicode_escape"))
+
+
+def list_tuples_to_dict(lst: list) -> dict:
+    """
+    Convert list of tuples to dict where first tuple item will be dict key
+    Args:
+        lst: list of tuples like [[(2, 4), (2, 6), (2, 8), (2, 12), (3, 6), (3, 12), (4, 8), (4, 12), (6, 12)]
+    Returns:
+        dict like {2: [4, 6, 8, 12], 3: [6, 12], 4: [8, 12], 6: [12]}
+    """
+    result = {}
+    for first, second in lst:
+        result.setdefault(first, []).append(second)
+    return result
