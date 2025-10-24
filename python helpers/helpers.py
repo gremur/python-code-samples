@@ -22,7 +22,7 @@ def add_datetime(file_name: str) -> str:
     Args:
         file_name: file name text string like 'file.json'
     Returns:
-        file name with datetime like ''file_20211201=132501.json'
+        file name with datetime like ''file_20211201-132501.json'
     """
     name, extension = file_name.split('.')
     return f"{str(name)}_{time.strftime('%Y%m%d-%H%M%S')}.{extension}"
